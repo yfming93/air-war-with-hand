@@ -1,0 +1,227 @@
+* {
+	padding: 0;
+	margin: 0;
+	user-select: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	overflow: hidden;
+	background:#000;
+}
+
+.container {
+	/* width: 100%;
+	height: 100%; */
+	width: 512px;
+	height: 100%;
+	/* height: 768px; */
+	margin: 0 auto;
+	position: relative;
+}
+
+/*--------start page---------*/
+.start-page {
+	width: 100%;
+	height: 100%;
+	/* width: 512px;
+	height: 768px; */
+	background: url(../img/img_bg_logo.jpg) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	position: absolute;
+	z-index: 1;
+}
+
+.start-page #title {
+	width: 100%;
+	height: 200px;
+	background: url(../img/LOGO.png) no-repeat center;
+	background-size: 60%;
+	margin: 0 auto;
+	margin-top: 150px;
+	font-family: "微软雅黑";
+	font-size: 72px;
+	text-align: center;
+	line-height: 220px;
+
+}
+
+.start-page #startbtn {
+	width: 300px;
+	height: 80px;
+	background: url(../img/button.png) no-repeat center;
+	background-size: 100%;
+	margin: 0 auto;
+	margin-top: 100px;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	line-height: 70px;
+	font-size: 40px;
+}
+
+
+/*---------game page---------*/
+
+.gamescene {
+	/* width: 512px;
+	height: 768px; */
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: #EEEEEE;
+	position: absolute;
+	z-index: 0;
+	overflow: hidden;
+}
+
+#scrollmap1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../img/img_bg_level_1.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+
+#scrollmap2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: -100%;
+	background: url(../img/img_bg_level_1.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+}
+
+.hero {
+	width: 80px;
+	height: 65px;
+	/*background: red;*/
+	position: absolute;
+	left: 100px;
+	top: 500px;
+	z-index: 10;
+
+}
+
+#xyinfo {
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #eee;
+	z-index: 10;
+}
+
+#score {
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-family: "arial black";
+	font-size: 72px;
+	text-align: right;
+	line-height: 100px;
+	color: #EEEEEE;
+	opacity: 0.75;
+}
+
+#pausebtn {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: url(../img/button2.png) no-repeat;
+	background-size: 100%;
+}
+
+.bullet {
+	position: absolute;
+	z-index: 1;
+}
+
+.game-over-page {
+	width: 100%;
+	height: 100%;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	top: 0;
+	z-index: 5;
+	display: none;
+}
+
+.game-over-page .bg {
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.5;
+
+}
+
+#panel {
+	width: 400px;
+	height: 300px;
+	background: url(../img/panel.png) no-repeat center;
+	background-size: 100% 100%;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	left: 55px;
+	top: 20%;
+	/*z-index: 11;*/
+}
+
+#replaybtn {
+	width: 200px;
+	height: 65px;
+	background: url(../img/button.png) no-repeat center;
+	background-size: 100%;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	left: 25%;
+	bottom: 20%;
+	/*z-index: 11;*/
+}
+
+#over-score {
+	width: 200px;
+	height: 100px;
+	font-family: "arial black";
+	font-size: 76px;
+	color: red;
+	text-align: center;
+	line-height: 100px;
+	position: absolute;
+	left: 25%;
+	top: 20%;
+	/*background: #EEEEEE;*/
+	z-index: 11;
+}
