@@ -196,13 +196,13 @@ hands.onResults(onResults);
 
 识别结果保存在multiHandLandmarks和multiHandedness对象中：
 
-![image-20210317165834933](/Users/kongdejian/Library/Application Support/typora-user-images/image-20210317165834933.png)
+![image.png](https://tva1.sinaimg.cn/large/008eGmZEly1gonuptzkqkj310u0e6411.jpg)
 
 **multiHandLandmarks**是一个二维数组，每一个数组中保存了21个关节坐标信息。把食指坐标赋值给飞机，就可以控制飞机移动了。
 
 ![hand](https://tva1.sinaimg.cn/large/008eGmZEly1gon20k3262g30nk0d7kjn.gif)
 
- 然后在加一点点细节，我们的飞机大战就完成了：
+ 然后再加一点点细节，我们的飞机大战就完成了：
 
 ![air](https://tva1.sinaimg.cn/large/008eGmZEly1gon23z6gjig30ai0f4u0y.gif)
 
