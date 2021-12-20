@@ -47,7 +47,8 @@ function onResults(results) {
 
 const hands = new Hands({
   locateFile: (file) => {
-    return `https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1.1606863095/${file}`;
+    // return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
+    return `../node_modules/@mediapipe/hands/${file}`;
   }
 });
 hands.onResults(onResults);
