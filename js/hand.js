@@ -48,7 +48,7 @@ function onResults(results) {
 const hands = new Hands({
   locateFile: (file) => {
     // return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
-    return `../node_modules/@mediapipe/hands/${file}`;
+    return `https://davie.gitee.io/air-war-with-hand/node_modules/@mediapipe/hands/${file}`;
   }
 });
 hands.onResults(onResults);
