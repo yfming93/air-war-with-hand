@@ -5,7 +5,7 @@ const canvasElement =
   document.getElementsByClassName('output_canvas')[0];
 
 const canvasCtx = canvasElement.getContext('2d');
-
+const mpHands = window
 
 function onResults(results) {
   // Hide the spinner.
@@ -45,12 +45,12 @@ function onResults(results) {
 
 }
 
-const hands = new Hands({
-  locateFile: (file) => {
-    // return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
-    return `https://davie.gitee.io/air-war-with-hand/node_modules/@mediapipe/hands/${file}`;
-  }
-});
+const config = {locateFile: (file) => {
+  return `https://cdn.jsdelivr.net/npm/@mediapipe/hands@${mpHands.VERSION}/${file}`;
+}};
+
+const hands = new mpHands.Hands(config);
+
 hands.onResults(onResults);
 
 hands.setOptions({
