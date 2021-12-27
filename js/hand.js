@@ -5,7 +5,7 @@ const canvasElement =
   document.getElementsByClassName('output_canvas')[0];
 
 const canvasCtx = canvasElement.getContext('2d');
-
+const mpHands = window
 
 function onResults(results) {
   // Hide the spinner.
@@ -50,6 +50,7 @@ const hands = new Hands({
     return `https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1.1606863095/${file}`;
   }
 });
+
 hands.onResults(onResults);
 
 hands.setOptions({
