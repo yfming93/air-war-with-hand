@@ -4,12 +4,16 @@
 <head>
 	<meta charset="utf-8" />
 	<title>飞机大战</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/plan.css" />
 	<link rel="stylesheet" href="./css/hand.css">
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.3/hands.js" crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous">
+	</script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1.1606863095/hands.js" crossorigin="anonymouse">
+	</script>
 
 </head>
 
@@ -63,9 +67,11 @@
 	</div>
 
 	<video class="input_video"></video>
-	<canvas class="output_canvas"></canvas>
 
-	<script src="js/plan.js"></script>
+	<canvas class="output_canvas" width="1280px" height="720px"></canvas>
+
+	<script src="js/plane.js"></script>
+
 	<script src="js/hand.js"></script>
 </body>
 
